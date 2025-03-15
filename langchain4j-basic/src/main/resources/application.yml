@@ -1,0 +1,8 @@
+langchain4j:
+  open-ai:
+    chat-model:
+      # \u8BFE\u7A0B\u6D4B\u8BD5 KEY\uFF0C\u9700\u8981\u66F4\u6362\u4E3A\u5B9E\u9645\u53EF\u7528 KEY	
+      api-key: sk-xx
+      model-name: qwen-turbo
+      # \u767E\u70BC\u517C\u5BB9OpenAI\u63A5\u53E3\u89C4\u8303\uFF0Cbase_url\u4E3Ahttps://dashscope.aliyuncs.com/compatible-mode/v1
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
