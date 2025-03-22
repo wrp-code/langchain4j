@@ -1,8 +1,51 @@
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/springai
+    username: postgres
+    password: 123456
+
+
+
+#langchain4j:
+#  open-ai:
+#    chat-model:
+#      api-key: sk-xx
+#      model-name: qwen-turbo
+#      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+
 langchain4j:
-  open-ai:
+## 灵积大模型
+#  community:
+#    dashscope:
+#      chat-model:
+#        api-key: ${DASHSCOPE_API_KEY}
+##        model-name: deepseek-v3
+#        model-name: qwen-max-latest
+
+
+  ollama:
     chat-model:
-      # \u8BFE\u7A0B\u6D4B\u8BD5 KEY\uFF0C\u9700\u8981\u66F4\u6362\u4E3A\u5B9E\u9645\u53EF\u7528 KEY	
-      api-key: sk-xx
-      model-name: qwen-turbo
-      # \u767E\u70BC\u517C\u5BB9OpenAI\u63A5\u53E3\u89C4\u8303\uFF0Cbase_url\u4E3Ahttps://dashscope.aliyuncs.com/compatible-mode/v1
-      base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      base-url: http://localhost:11434
+#      model-name: llama3 # 不支持 function call
+      model-name: llama3.1
+    embedding-model:
+      base-url: http://localhost:11434
+      model-name: all-minilm
+
+pgvector:
+  database: springai
+  host: localhost
+  port: 5432
+  user: postgres
+  password: 123456
+  table: my_embeddings
+
+search:
+  api-key: ${SEARCH_API_KEY}
+  engine: baidu
+
+#logging:
+#  level:
+#    root: debug
