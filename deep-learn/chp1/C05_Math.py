@@ -4,6 +4,7 @@ a = torch.arange(20, dtype=torch.float32).reshape(4,5)
 print(a)
 print(a.T)
 
+# 分配新内存
 b = a.clone()
 print(b)
 print(a + b)
@@ -18,11 +19,11 @@ print(a.sum(axis=0))
 print(a.sum(axis=1))
 print(a)
 
-
 ## 平均值
 print(a.mean())
 print(a.mean(axis=0))
 
+print("=================")
 ## 非降维
 sum_a = a.sum(axis=0, keepdims=True)
 print(sum_a)
@@ -44,3 +45,5 @@ sum_x = a.sum(axis=1)
 print(sum_x)
 print(x / sum_x)
 print(x.sum(axis=[0,1,2]))
+
+## mv mm

@@ -42,9 +42,11 @@ print(x + y)
 print(x - y)
 print(x * y)
 print(x / y)
+# 求幂运算
 print(x ** y)
+# 指数运算
 print(torch.exp(x))
-
+print('===========1111111111=============')
 x = torch.arange(12, dtype=torch.float32).reshape(3,4)
 y = torch.tensor([[2, 1, 4, 3], [1, 2, 3, 4], [4, 3, 2, 1]])
 # 1维拼接
@@ -57,12 +59,12 @@ print(x == y)
 print(x < y)
 print(x > y)
 
-print('========================')
+print('===========222222222222=============')
 
 # 单元素张量
 print(x.sum())
 
-## 广播机制
+## 广播机制,维度必须相同
 a = torch.arange(3).reshape(3,1)
 b = torch.arange(2).reshape(1,2)
 print(a)
@@ -79,7 +81,7 @@ print(x)
 # 第一行和第二行的全部元素设置为12
 x[0:2, :] = 12
 print(x)
-
+print('===========333333333333=============')
 # 节省内存
 ## id 求y变量的内存地址
 before = id(y)
@@ -96,7 +98,7 @@ before = id(x)
 x += y
 print(id(x) == before)
 
-
+print('===========444444444=============')
 ## torch张量 转化为 numpy张量
 a = x.numpy()
 ## numpy张量 转化为 torch张量

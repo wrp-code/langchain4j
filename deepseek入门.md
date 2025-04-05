@@ -79,3 +79,22 @@
 > 推理模型，本身就是专家模型&专家思维
 
 ## 5. 场景
+1. 数学&物理
+2. 代码能力
+3. 写作&文案
+4. 文本摘要
+5. 指定输出格式（mermaid、SVG、Xmind）
+6. 生成PPT（deepseek生成内容，Kimi创建PPT）
+7. 日常生活
+8. 简历生成
+9. 模拟面试
+
+## 6. 指令模型和推理模型
+### 6.1 指令模型（Instruct model）
+> 依赖用户指令来生成内容，通用、传统模型
+> 
+> Deepseek-V3,GPT-4o、Qwen2.5
+>
+>
+### 6.2 推理模型（reasoning model）
+> Deepseek-R1, OpenAI-o1
