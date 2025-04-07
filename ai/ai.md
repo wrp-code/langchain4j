@@ -175,3 +175,11 @@ XoT
     - 过度跟模拟人类学习，结果会更差
 
 RLHF ==> RLAIF 让AI替代人类，对其他AI进行打分评价.
+
+### AI Agent
+> 让AI执行多步骤任务。
+> - AutoGPT、AgentGPT、BabyAGI、Godmode
+> - Figure 01
+> - 有记忆的ChatGPT
+
+
