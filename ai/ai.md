@@ -182,4 +182,44 @@ RLHF ==> RLAIF 让AI替代人类，对其他AI进行打分评价.
 > - Figure 01
 > - 有记忆的ChatGPT
 
+### Transformer
+> 类神经网络
+> 
+> Token Embedding（token和向量的对应关系是在训练时生成，没有考虑上下文）
+1. Tokenization 文字转token
+   - 准备一个token list（人为设置）
+2. Input Layer 理解token
+   - 每个token 转成向量 (embedding)(训练得到)
+   - 为每一个位置设置一个独特的向量（positional Embedding）（训练/人为）
+3. Attention 理解上下文
+   - Contextualized Token Embedding
+   - 找出相关的Token（计算相关性，训练）分数 Attention Weight
+   - Attention Matrix
+   - Causal Attention
+   - Multi-head Attention
+   - 计算时只考虑前面的Token（计算过的不在重复计算）
+4. Feed Forward 整合、思考
+   - 第三步和第四步组成Transformer Block，可以有多个
+5. Output Layer 输出
+   - 文字接龙生成答案
+   - 答案挨个生成，生成的答案带回输入生成后续答案
+
+### AI在想什么
+> 人工智能是黑盒子，有些AI是开源的（知道参数和训练过程）
+> - Transparency 透明的
+> - Interpretable 思维是透明的
+> - Explainable 可解释性
+
+找出影响输出的关键输入，有以下方法
+- 观察每一个输入的改变对结果的影响
+- Gradient-based Approach
+- 分析Attention
+找出影响输出的关键训练资料
+分析Embedding中存有什么样的信息
+- Probing
+- 将高维数据投影到二维平面上
+- 用AI来解释AI（但也不一定可信他就是这样想的）
+Surface词汇 ==> Syntactic语法 ==> Semantic语义
+
+
 
