@@ -221,5 +221,12 @@ RLHF ==> RLAIF 让AI替代人类，对其他AI进行打分评价.
 - 用AI来解释AI（但也不一定可信他就是这样想的）
 Surface词汇 ==> Syntactic语法 ==> Semantic语义
 
-
-
+Sequence to sequence(seq2seq)
+> input a sequence ==> Encoder ==> Decoder ==> output a sequence
+> 
+> 输出长度由模型决定
+> 
+> - seq2seq for text
+> - seq2seq for Syntactic Parsing
+> - seq2seq for Multi-label Classification
+> - seq2seq for Object Detection
